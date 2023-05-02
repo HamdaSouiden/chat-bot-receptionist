@@ -1,4 +1,7 @@
+import 'package:chat_res/controllers/ControlView.dart';
+import 'package:chat_res/helper/binding.dart';
 import 'package:chat_res/routes/route.dart';
+import 'package:chat_res/view/home.view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,8 +20,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      initialBinding: Binding(),
       getPages: routes(),
       initialRoute: "/Splash",
+      home: Scaffold(body:HomeView()),
     );
   }
 }
