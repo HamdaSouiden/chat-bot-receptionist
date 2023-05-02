@@ -1,6 +1,7 @@
 # chat_res
 
 A new Flutter project.
+You must create firebase project. And add google-services.json file in the android/app directory.
 
 ## Getting Started
 
